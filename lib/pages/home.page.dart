@@ -40,6 +40,42 @@ class HomePage extends StatelessWidget {
       ),
       body: Container(
         color: Color(0xFFF2F3F6),
+        child: Card(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              const ListTile(
+                leading: Icon(Icons.album),
+                title: Text("Bruce Wayne"),
+                subtitle: Text("09/05/2019 18:37"),
+                trailing: Icon(Icons.more_vert),
+              ),
+              Container(
+                child: Image.asset("assets/post-picture-001.png"),
+              ),
+              Container(
+                padding: EdgeInsets.all(10),
+                child: Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ex sem. Praesent elit dui, iaculis at interdum eu, rutrum et mi. "),
+              ),
+              ButtonTheme.bar(
+                // make buttons use the appropriate styles for cards
+                child: ButtonBar(
+                  children: <Widget>[
+                    FlatButton(
+                      child: Icon(Icons.favorite),
+                      onPressed: () {/* ... */},
+                    ),
+                    FlatButton(
+                      child: Icon(Icons.share),
+                      onPressed: () {/* ... */},
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
