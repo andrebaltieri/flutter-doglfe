@@ -32,13 +32,15 @@ class HomePage extends StatelessWidget {
               ),
               onPressed: () => {},
             ),
-          )
+          ),
         ],
       ),
       body: Container(
         color: Color(0xFFF2F3F6),
         child: ListView(
           children: <Widget>[
+            cardItem(),
+            cardItem(),
             cardItem(),
             cardItem(),
             cardItem(),
@@ -56,7 +58,8 @@ Widget cardItem() {
       children: <Widget>[
         const ListTile(
           leading: CircleAvatar(
-            backgroundImage:NetworkImage("https://baltaio.blob.core.windows.net/student-images/1edd5c50-bae9-11e8-8eb4-39de303632c1.jpg"),
+            backgroundImage: NetworkImage(
+                "https://baltaio.blob.core.windows.net/student-images/1edd5c50-bae9-11e8-8eb4-39de303632c1.jpg"),
           ),
           title: Text("Bruce Wayne"),
           subtitle: Text("09/05/2019 18:37"),
@@ -71,16 +74,15 @@ Widget cardItem() {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas quis ex sem. Praesent elit dui, iaculis at interdum eu, rutrum et mi. "),
         ),
         ButtonTheme.bar(
-          // make buttons use the appropriate styles for cards
           child: ButtonBar(
             children: <Widget>[
               FlatButton(
                 child: Icon(Icons.favorite),
-                onPressed: () {/* ... */},
+                onPressed: () {},
               ),
               FlatButton(
                 child: Icon(Icons.share),
-                onPressed: () {/* ... */},
+                onPressed: () {},
               ),
             ],
           ),
