@@ -1,4 +1,3 @@
-import 'package:doglife/pages/reset-password.page.dart';
 import 'package:flutter/material.dart';
 
 class SignupPage extends StatelessWidget {
@@ -45,10 +44,7 @@ class SignupPage extends StatelessWidget {
                 child: SizedBox.expand(
                   child: FlatButton(
                     child: Icon(
-                      IconData(
-                        57669,
-                        fontFamily: 'MaterialIcons',
-                      ),
+                      Icons.add,
                       color: Colors.white,
                     ),
                     onPressed: () {},

@@ -27,10 +27,7 @@ class HomePage extends StatelessWidget {
             width: 60,
             child: FlatButton(
               child: Icon(
-                IconData(
-                  59574,
-                  fontFamily: 'MaterialIcons',
-                ),
+                Icons.search,
                 color: Color(0xFFBABABA),
               ),
               onPressed: () => {},
@@ -58,7 +55,9 @@ Widget cardItem() {
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         const ListTile(
-          leading: Icon(Icons.album),
+          leading: CircleAvatar(
+            backgroundImage:NetworkImage("https://baltaio.blob.core.windows.net/student-images/1edd5c50-bae9-11e8-8eb4-39de303632c1.jpg"),
+          ),
           title: Text("Bruce Wayne"),
           subtitle: Text("09/05/2019 18:37"),
           trailing: Icon(Icons.more_vert),
